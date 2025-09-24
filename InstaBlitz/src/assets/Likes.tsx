@@ -10,7 +10,7 @@ export const Likes:React.FC = () =>{
     }
 
     return <>
-    <button className="bg-red-600" onClick={likePress}>
+    <button className={isLiked?"bg-red-600" :"bg-white"}onClick={likePress}>
     {likeNum}
     </button>
     </>
