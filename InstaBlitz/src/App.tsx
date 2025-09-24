@@ -1,11 +1,11 @@
-import { useState } from 'react'
 import './App.css'
+import { Base } from './assets/Base'
 
 function App() {
 
   return (
     <>
-      
+      <Base></Base>
     </>
   )
 }
