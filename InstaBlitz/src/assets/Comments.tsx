@@ -7,13 +7,13 @@ export const Comments:React.FC = () =>{
         setAllComments([...allComments, commentContent]);
         setCommentContent("");
     }
-    return <>
+    return <div className="mb-10">
     <input
         value={commentContent}
         onChange={(e) => setCommentContent(e.target.value)}
         placeholder="Enter a comment"
       />
       <button onClick={enterComment}>enter</button>
-      {allComments.map((current)=>{return <h4>{current}</h4>})}
-    </>
+      {allComments.map((current)=> <h4>{current}</h4>)}
+    </div>
 }
